@@ -16,7 +16,7 @@ The site, including the nav menu, would be styled using CSS in the external styl
 <div class="outer">
     <header>
         <figure>
-            <img src="http://placehold.it/450x115/" alt="MyCompany Logo" width="1350" height="115">
+            <img src="image\images.jpg" alt="MyCompany Logo" width="888" height="146">
             <h1>My Home Maintenance Co.</h1>
             <figcaption>
                 <p>No home repair job in the Valley area is too big for us.</p>
