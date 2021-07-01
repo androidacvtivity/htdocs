@@ -42,7 +42,7 @@
         </div>
 		<br>
 		
-		
+	 	 
 		<?php 
 		
 		echo "<p align='center'> <font color=blue  size='6pt'>Lacul „Valea Morilor”, Chișinău - 2021 - 2 Mai </font> </p>";
@@ -52,8 +52,8 @@
 		
 		<div  class="img-container">
             <img src="\image\VBG.jpg"  alt="myPic" />
-        </div>
-		
+        </div>  
+		 
 		
 		
 		
