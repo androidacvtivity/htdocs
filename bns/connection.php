@@ -30,7 +30,7 @@ class Constants
 	
 	static $SQL_SELECT_ALL_3 ="SELECT * FROM reg_caem_06_21  ORDER BY id";
 	
-	static $SQL_SELECT_ALL_4 ="SELECT * FROM reg_cfp_03_21  ORDER BY id";
+	static $SQL_SELECT_ALL_4 ="SELECT * FROM reg_cfp_06_21  ORDER BY id";
 	
 	static $SQL_SELECT_ALL_5 ="SELECT * FROM cl_cuatm_all  ORDER BY id";
 	
