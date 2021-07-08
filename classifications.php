@@ -11,7 +11,7 @@ The navigation subdivision is the focus of this example.
 The site, including the nav menu, would be styled using CSS in the external stylesheet.
 -->
 </head>
-<body id="home">  <!-- id indicates page; is used by menu CSS to indicate active page.  No JS needed. -->
+<body id="classifications">  <!-- id indicates page; is used by menu CSS to indicate active page.  No JS needed. -->
 
 <div class="outer">
     <header>
@@ -33,7 +33,13 @@ The site, including the nav menu, would be styled using CSS in the external styl
 	
 	<!--END mynav.ph INCLUDE-->
     <main>
-        <div></div>  <!-- Use whatever tags are appropriate for content. -->
+        <div>
+
+
+
+
+
+		</div>  <!-- Use whatever tags are appropriate for content. -->
     </main>
     <footer>
         <div></div>  <!-- Use whatever tags are appropriate for content. -->
