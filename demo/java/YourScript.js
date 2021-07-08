@@ -14,6 +14,12 @@ function newDoc1() {
 }
 
 
+function Back_to_main() {
+  window.location.assign("../../index.php")
+}
+
+
+
 // function Link1(){
 	// window.location.href = "Link1";
 // }
