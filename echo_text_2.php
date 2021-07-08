@@ -14,11 +14,11 @@ if (mysqli_connect_errno()) {
 } 
 
 
- $query=mysqli_query($con, "SELECT * FROM start3v2");
+ $query=mysqli_query($con, "SELECT *  FROM cl_med_10_07_19 ORDER BY  ID");
  
  
     while($data = mysqli_fetch_array($query)){
-    echo $data["name"]."<br>";
+    echo $data["den_come"]."<br>";
 }
 
 ?>
