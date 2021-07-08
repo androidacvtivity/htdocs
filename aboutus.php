@@ -11,24 +11,38 @@ The navigation subdivision is the focus of this example.
 The site, including the nav menu, would be styled using CSS in the external stylesheet.
 -->
 </head>
-<body id="home">  <!-- id indicates page; is used by menu CSS to indicate active page.  No JS needed. -->
+<body id="aboutus">  <!-- id indicates page; is used by menu CSS to indicate active page.  No JS needed. -->
 
 <div class="outer">
     <header>
         <figure>
-            <img src="http://placehold.it/450x115/" alt="MyCompany Logo" width="450" height="115">
+            <img src="image\images.jpg" alt="MyCompany Logo" width="888" height="146" align="center">
             <h1>My Home Maintenance Co.</h1>
             <figcaption>
                 <p>No home repair job in the Valley area is too big for us.</p>
             </figcaption>
         </figure>
     </header>
+	
+	<tr>
+	<td>
 	<!--BEGIN mynav.php INCLUDE-->
    <?php include "./mynav.php"; ?>
+   </td>
+   </tr>
 	
 	<!--END mynav.ph INCLUDE-->
     <main>
-        <div></div>  <!-- Use whatever tags are appropriate for content. -->
+        <div>
+<?php
+
+$foo = include 'echo_text_2.php';
+
+echo $foo; // prints 'PHP'
+?>
+<br>
+
+		</div>  <!-- Use whatever tags are appropriate for content. -->
     </main>
     <footer>
         <div></div>  <!-- Use whatever tags are appropriate for content. -->

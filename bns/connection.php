@@ -51,19 +51,5 @@ class Constants
 	static $SQL_SELECT_ALL_14 ="SELECT * FROM cl_prodmold  ORDER BY id";
 	
 	static $SQL_SELECT_ALL_15 ="SELECT * FROM cl_med_10_07_19  ORDER BY id";
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
 ?>
