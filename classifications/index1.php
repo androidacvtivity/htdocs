@@ -4,7 +4,7 @@
   <script src="YourScript.js"></script>
   
   
-  <link href="./stylecss.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="stylecss.css" rel="stylesheet" type="text/css" media="screen" />
   <style>
   	body {font-family: "Lato", sans-serif;}
 		.sidenav {height: 100%;width: 200px;position: fixed;z-index: 1;top: 0;left: 0;background-color: #464850;overflow-x: hidden;padding-top: 20px;}
