@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./mycss.css" type="text/css">
+    <link rel="stylesheet" href="mycss.css" type="text/css">
     <title>HOME (page 1/5)</title>
 <!--
 This is an HTML page with four major subdivisions: header, nav, main, footer.
@@ -34,13 +34,10 @@ The site, including the nav menu, would be styled using CSS in the external styl
 	<!--END mynav.ph INCLUDE-->
     <main>
         <div>
-<?php
 
-$foo = include 'echo_text_2.php';
 
-echo $foo; // prints 'PHP'
-?>
-<br>
+
+
 
 		</div>  <!-- Use whatever tags are appropriate for content. -->
     </main>
