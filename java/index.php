@@ -3,7 +3,7 @@
 <head>
 <script src="YourScript.js"></script>
 
-<link href="./stylecss.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="stylecss.css" rel="stylesheet" type="text/css" media="screen" />
 
 
 
