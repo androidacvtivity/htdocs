@@ -48,7 +48,9 @@ nav ul li a:focus {
 #services .services a,
 #projects .projects a,
 #classifications .classifications a,
+#money .money a,
 #java .java a,
+#datatime  .datatime a,
 #contact .contact a {
     color:#33348e;
     background-color:#fff;
