@@ -8,14 +8,16 @@
 			
 			<li class="classifications"><a href="classifications\index.php">classifications</a></li>
 			
-            <li class="services"><a href="services.html">services</a></li>
+            <li class="services"><a href="services.php">services</a></li>
 			
 			<li class="java"> <a href="java\index.php">Java</a></li>
 			
+			<li class="money"> <a href="money\index.php">HOW TO MAKE MONEY ONLINE</a></li>
 			
-            <li class="contact"><a href="contact.html">contact</a></li>
 			
-			<li class="contact"><a href=""><script>
+            <li class="contact"><a href="contact.php">contact</a></li>
+			
+			<li class="datatime"><a href=""><script>
 var mydate=new Date()
 var theYear=mydate.getFullYear()
 var day=mydate.getDay()
