@@ -67,7 +67,7 @@ public function insert(){
         $con=$this->connect();
         if($con != null)
         {
-            $sql = "INSERT INTO start3v2 (name, description, galaxy,star,serviciu,sectia,depart,phone,phoneinternal, email, personalinfo,formname,phonemobil,floor,office  ) VALUES
+            $sql = "INSERT INTO start3v3 (name, description, galaxy,star,serviciu,sectia,depart,phone,phoneinternal, email, personalinfo,formname,phonemobil,floor,office  ) VALUES
             ('$name','$description','$galaxy','$star','$serviciu','$sectia','$depart', '$phone', '$phoneinternal','$email', '$personalinfo','$formname','$phonemobil',
 			'$floor','$office')";
             $result = $con->query($sql);
@@ -110,7 +110,7 @@ public function insert(){
 
         $con=$this->connect();
         if($con != null){
- 	        $sql = "UPDATE  start3v2 SET name = '$name',description = '$description',
+ 	        $sql = "UPDATE  start3v3 SET name = '$name',description = '$description',
              galaxy = '$galaxy', star = '$star', serviciu = '$serviciu', sectia = '$sectia', 
 			 depart = '$depart', phone = '$phone', phoneinternal = '$phoneinternal', email = '$email',
 			 personalinfo = '$personalinfo', formname = '$formname',phonemobil = '$phonemobil',floor = '$floor',office = '$office'            
@@ -142,7 +142,7 @@ public function insert(){
         $con=$this->connect();
         if($con != null){
             //$sql = "DELETE FROM start1 WHERE id ='$id'";
-			$sql = "UPDATE start3v2 SET statut = 'yyyyy',remove_date = NOW() WHERE id ='$id'";
+			$sql = "UPDATE start3v3 SET statut = 'yyyyy',remove_date = NOW() WHERE id ='$id'";
 			
             $result = $con->query($sql);
             if($result == TRUE){
@@ -212,28 +212,99 @@ public function insert(){
 		$sql="
 	SELECT vb.*
 
-	FROM start3v2 vb
+	FROM start3v3 vb
 
 		    
 		    WHERE 
 			
 			 (
-			 vb.name LIKE LOWER(TRIM('%$query%')) 
-		     or vb.galaxy LIKE LOWER(TRIM('%$query%')) 
-			 or vb.star LIKE LOWER(TRIM('%$query%')) 
-			 or vb.depart LIKE LOWER(TRIM('%$query%')) 
-			 or vb.sectia LIKE LOWER(TRIM('%$query%')) 
-			 or vb.serviciu LIKE LOWER(TRIM('%$query%'))  
-             or vb.phone LIKE LOWER(TRIM('%$query%'))	
-             or vb.description LIKE LOWER(TRIM('%$query%'))	
+			 
+			 
+			 
+			 		 replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(vb.name,'Ţ','T')
+,'ţ','t'),'Ş','S'),'ş','s'),'ă','a'),'Î','I'),'Ă','A'),'î','i'),'â','a'),'Â','A')
+			 
+			 LIKE LOWER(TRIM('%$query%')) 
+			 
+			 
+		     or  
+			  
+			  		 replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(vb.galaxy,'Ţ','T')
+,'ţ','t'),'Ş','S'),'ş','s'),'ă','a'),'Î','I'),'Ă','A'),'î','i'),'â','a'),'Â','A')
+			  
+			  LIKE LOWER(TRIM('%$query%')) 
+			  
+			  
+			 or  
+			 
+			 	 replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(vb.star,'Ţ','T')
+,'ţ','t'),'Ş','S'),'ş','s'),'ă','a'),'Î','I'),'Ă','A'),'î','i'),'â','a'),'Â','A')
+			 
+			 
+			 LIKE LOWER(TRIM('%$query%')) 
+			 
+			 
+			 or 
+			 
+			 	 replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(vb.depart ,'Ţ','T')
+,'ţ','t'),'Ş','S'),'ş','s'),'ă','a'),'Î','I'),'Ă','A'),'î','i'),'â','a'),'Â','A')
+
+			 LIKE LOWER(TRIM('%$query%')) 
+			 
+			 
+			 or 
+			 
+			 
+			 	 replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(vb.sectia  ,'Ţ','T')
+,'ţ','t'),'Ş','S'),'ş','s'),'ă','a'),'Î','I'),'Ă','A'),'î','i'),'â','a'),'Â','A')
+			 
+			 LIKE LOWER(TRIM('%$query%')) 
+			 
+			 
+			 
+			 or 
+			 
+			 		 	 replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(vb.serviciu,'Ţ','T')
+,'ţ','t'),'Ş','S'),'ş','s'),'ă','a'),'Î','I'),'Ă','A'),'î','i'),'â','a'),'Â','A')
+			 
+			 LIKE LOWER(TRIM('%$query%'))  
+			 
+			 
+			 
+             or  
+				  replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(vb.phone,'Ţ','T')
+,'ţ','t'),'Ş','S'),'ş','s'),'ă','a'),'Î','I'),'Ă','A'),'î','i'),'â','a'),'Â','A')
+				 
+				 
+				 LIKE LOWER(TRIM('%$query%'))	
+				 
+				 
+             or  
+				 
+				 			  replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(vb.description,'Ţ','T')
+,'ţ','t'),'Ş','S'),'ş','s'),'ă','a'),'Î','I'),'Ă','A'),'î','i'),'â','a'),'Â','A')
+				 
+				 LIKE LOWER(TRIM('%$query%'))	
 			
-             or vb.phonemobil LIKE LOWER(TRIM('%$query%'))
-             or vb.studio LIKE LOWER(TRIM('%$query%'))					 
+             or  
+             
+             
+				 			  replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(vb.phonemobil,'Ţ','T')
+,'ţ','t'),'Ş','S'),'ş','s'),'ă','a'),'Î','I'),'Ă','A'),'î','i'),'â','a'),'Â','A')
+				 
+				 
+				 LIKE LOWER(TRIM('%$query%'))
+				 
+             or  
+				 		  replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(vb.studio,'Ţ','T')
+,'ţ','t'),'Ş','S'),'ş','s'),'ă','a'),'Î','I'),'Ă','A'),'î','i'),'â','a'),'Â','A')
+				 
+				 LIKE LOWER(TRIM('%$query%'))					 
 			 ) 
 			 
 			
 			 AND (statut = 'xxxxx') 
-            ORDER BY ID		 
+            ORDER BY ID
 	
 		    LIMIT
          $limit OFFSET $start  
@@ -292,7 +363,7 @@ public function insert(){
 		$sql="
 	SELECT vb.*
 
-	FROM start3v2 vb
+	FROM start3v3 vb
 
 		    
 		    WHERE 
