@@ -72,7 +72,7 @@ class Scientistsvw{
 		$limitvw=$_POST['limitvw'];
         $startvw=$_POST['startvw'];
 
-		$sql="SELECT * FROM reg_05_16_22_vw	
+		$sql="SELECT * FROM reg_05_23_22_vw	
 		
 		
 		WHERE 
