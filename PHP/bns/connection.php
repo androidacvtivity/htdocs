@@ -24,7 +24,7 @@ class Constants
 	
 	static $SQL_SELECT_ALL1="SELECT * FROM start3v2  ORDER BY ID";
 	
-	static $SQL_SELECT_ALL_VIEW ="SELECT * FROM reg_03_21_22_vw  ORDER BY id_vw";
+	static $SQL_SELECT_ALL_VIEW ="SELECT * FROM reg_03_28_22_vw  ORDER BY id_vw";
 	
 	static $SQL_SELECT_ALL_2 ="SELECT * FROM reg_cuatm_06_21  ORDER BY id_cu";
 	
