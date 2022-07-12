@@ -73,7 +73,7 @@ class Scientistsvw{
         $startvw=$_POST['startvw'];
 
 
-		$sql="SELECT * FROM reg_04_07_22_vw	
+		$sql="SELECT * FROM reg_11_07_22_vw	
 
 		
 		
